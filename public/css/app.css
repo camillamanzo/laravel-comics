@@ -18,6 +18,9 @@ header ul li a {
   text-decoration: none;
 }
 
+main {
+  text-transform: uppercase;
+}
 main .jumbotron {
   background-image: url(/images/jumbotron.jpg);
   height: 300px;
@@ -25,10 +28,33 @@ main .jumbotron {
 }
 main .cards-container {
   background-color: #1b191f;
+  padding: 50px 0;
+  position: relative;
 }
 main .comic-wrapper {
   width: 80%;
   margin: auto;
+}
+main .comic-wrapper .blue-bg {
+  background-color: #006eff;
+  color: white;
+  border: none;
+}
+main .comic-wrapper .curr-series {
+  width: 235px;
+  padding: 10px 20px;
+  font-size: 25px;
+  position: absolute;
+  top: -25px;
+}
+main .comic-wrapper .my_btn-container {
+  padding-top: 30px;
+  text-align: center;
+}
+main .comic-wrapper .my_btn-container .my_btn {
+  padding: 5px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 main .comic-wrapper ul {
   display: flex;

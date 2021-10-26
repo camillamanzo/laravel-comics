@@ -1,5 +1,9 @@
 <div class="comic-wrapper">
     <nav>
+        <div class="blue-bg curr-series">
+            current series
+        </div>
+
         <ul>
 
             {{-- foreach on comics_files --}}
@@ -23,5 +27,10 @@
 
             @endforeach
         </ul>
+
+        <div class="my_btn-container">
+            <button class="blue-bg my_btn">load more</button>
+        </div>
+        
     </nav>
 </div>
