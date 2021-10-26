@@ -58,6 +58,7 @@
                 {{-- talent section --}}
                 <div class="talent">
                     <div>
+                        <h3>Talent</h3>
                         <span class="title">
 
                         </span>
@@ -77,6 +78,7 @@
 
                 {{-- specs section --}}
                 <div class="specs">
+                    <h3>Specs</h3>
                     <div>
                         <span class="title">
 
