@@ -22,11 +22,11 @@ Route::get('/comic/{id}', function ($id) {
 
     if(is_numeric($id) && ($id < count($comics) && $id >= 0)){
 
-    $comic = $comics[$id];
-    return view('comic', ['comic' => $comic]);
+        $comic = $comics[$id];
+        return view('comic', ['comic' => $comic]);
 
     }else {
-        abort('404');
+        abort('404'); //chiama errore 404
     }
 
 })->name('comic');

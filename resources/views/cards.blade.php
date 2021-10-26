@@ -10,8 +10,9 @@
             @foreach ($comics_files as $file)
 
                 {{-- @dump($file) --}}
+
                 <li>
-                    <a href="#">
+                    <a href="{{ route('comic', ['id' => $loop->index] ) }}">
                         <div class="single-comic">
 
                             {{-- adding figure --}}
