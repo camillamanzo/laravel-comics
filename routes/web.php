@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('/comic', function () {
     return view('comic');
 })->name('comic');
+
+Route::get('/comic', function () {
+    $comics = config('comics');
+    return view('comic', ['comic' => $comics[0]]);
+})->name('comic');
