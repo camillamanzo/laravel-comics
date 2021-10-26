@@ -6,6 +6,7 @@ header .dc-power {
 header ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
@@ -13,6 +14,9 @@ header ul {
 }
 header ul li {
   padding: 15px;
+}
+header ul li img {
+  width: 60%;
 }
 header ul li a {
   text-decoration: none;
