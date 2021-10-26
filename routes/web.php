@@ -17,11 +17,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/comic', function () {
-    return view('comic');
-})->name('comic');
-
-Route::get('/comic', function () {
+Route::get('/comic/{id}', function ($id) {
     $comics = config('comics');
-    return view('comic', ['comic' => $comics[0]]);
+    $comic = $comics[$id];
+    return view('comic', ['comic' => $comic]);
 })->name('comic');
