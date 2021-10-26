@@ -6,7 +6,7 @@
 
         <nav>
             <ul>
-                <li><a href="/"><img src="../../../public/images/dc-logo.png" alt=""></a></li>
+                <li><a href="/"><img src="/images/dc-logo.png" alt=""></a></li>
                 @foreach ($header_links as $link)
                     <li class="{{ request() -> routeIs ($link) ? 'active' : '' }}">
                         <a href="{{ ($link) }}">{{ $link }}</a>

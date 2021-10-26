@@ -10,7 +10,7 @@
 
         <!-- current series section with v-for on cards-->
         <section class="cards">
-
+            @include('cards', ['comics_files' => config('comics')])
         </section>
 
         <!-- info section with v-for on elements -->
