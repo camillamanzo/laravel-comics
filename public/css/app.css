@@ -28,7 +28,7 @@ header ul li a {
   text-decoration: none;
 }
 
-main .jumbo {
+main .jumbotron {
   background-image: url(../../public/images/jumbotron.jpg);
   height: 300px;
   background-size: cover;

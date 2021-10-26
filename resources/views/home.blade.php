@@ -4,7 +4,7 @@
     <main>
 
         <!-- jumbo section with full width background -->
-        <section class="jumbo">
+        <section class="jumbotron">
         
         </section>
 
