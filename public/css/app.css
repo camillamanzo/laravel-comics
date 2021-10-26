@@ -7,29 +7,3 @@
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
-header .dc-power {
-  height: 20px;
-  width: 100%;
-  background-color: #006eff;
-}
-header ul {
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  list-style-type: none;
-}
-header ul li {
-  padding: 15px;
-}
-header ul li a {
-  text-decoration: none;
-}
-
-main .jumbotron {
-  background-image: url(../../public/images/jumbotron.jpg);
-  height: 300px;
-  background-size: cover;
-}

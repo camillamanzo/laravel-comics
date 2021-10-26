@@ -7,16 +7,11 @@
         <nav>
             <ul>
                 <li><a href="/"><img src="../../../public/images/dc-logo.png" alt=""></a></li>
-                <li><a href="/">Characters</a></li>
-                <li><a href="/">Comics</a></li>
-                <li><a href="/">Movies</a></li>
-                <li><a href="/">TV</a></li>
-                <li><a href="/">Games</a></li>
-                <li><a href="/">Collectibles</a></li>
-                <li><a href="/">Videos</a></li>
-                <li><a href="/">Fans</a></li>
-                <li><a href="/">News</a></li>
-                <li><a href="/">Shop</a></li>
+                @foreach ($header_links as $link)
+                    <li class="{{ request() -> routeIs ($link) ? 'active' : '' }}">
+                        <a href="{{ ($link) }}">{{ $link }}</a>
+                    </li>
+                @endforeach
                 <li><input type="search" placeholder="Search"></li>
             </ul>
             <ul>

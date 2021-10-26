@@ -1,37 +1,7 @@
-@import "partials/common";
-@import "partials/content";
-@import "partials/header";
-@import "partials/footer";
-@import "partials/general";
-@import "partials/variables";
-
-header{
-    .dc-power{
-        height: 20px;
-        width: 100%;
-        background-color: $main-color;
-    }
-    ul{
-        display: flex;
-        justify-content: center;
-
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 12px;
-        list-style-type: none;
-        li{
-            padding: 15px;
-            a{
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-main{
-    .jumbotron{
-        background-image: url(../../public/images/jumbotron.jpg);
-        height: 300px;
-        background-size: cover;
-    }
-}
+@import "./partials/common";
+@import "./partials/content";
+@import "./partials/header";
+@import "./partials/main";
+@import "./partials/footer";
+@import "./partials/general";
+@import "./partials/variables";

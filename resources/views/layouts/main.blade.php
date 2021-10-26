@@ -9,7 +9,7 @@
     <title>Comics</title>
 </head>
 <body>
-    @include('partials.header')
+    @include('partials.header', ['header_links' => config('nav_header')])
     
     <main>
         @yield('content')
