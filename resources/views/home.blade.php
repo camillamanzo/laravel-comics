@@ -9,7 +9,7 @@
         </section>
 
         <!-- current series section with v-for on cards-->
-        <section class="cards">
+        <section class="cards-container">
             @include('cards', ['comics_files' => config('comics')])
         </section>
 

@@ -23,6 +23,35 @@ main .jumbotron {
   height: 300px;
   background-size: cover;
 }
+main .cards-container {
+  background-color: #1b191f;
+}
+main .comic-wrapper {
+  width: 80%;
+  margin: auto;
+}
+main .comic-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+main .comic-wrapper ul a {
+  text-decoration: none;
+  color: white;
+}
+main .comic-wrapper ul a .single-comic {
+  width: 180px;
+  padding: 10px;
+}
+main .comic-wrapper ul a .single-comic .thumb {
+  height: 180px;
+}
+main .comic-wrapper ul a .single-comic .thumb img {
+  width: 160px;
+  height: 180px;
+  background-size: cover;
+}
 
 * {
   box-sizing: border-box;
