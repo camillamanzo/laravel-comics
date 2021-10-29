@@ -36,7 +36,7 @@
 
             {{-- advert of the comic --}}
             <div class="advert-wrapper">
-                <h3>Advertisement</h3>
+                <h4>Advertisement</h4>
                 <figure>
                     <img src="/images/advert-pic.jpg" alt="" alt="advert pic">
                 </figure>
@@ -71,7 +71,7 @@
                 </div>
                 <hr>
                 <div class="my_between">
-                    
+
                     <div class="title">
                         Written by: 
                     </div>
@@ -118,6 +118,7 @@
                         {{ $comic['sale_date'] }}
                     </div>
                 </div>
+                <hr>
             </div>
         </div>
     </section>
