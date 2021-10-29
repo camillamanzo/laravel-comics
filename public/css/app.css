@@ -11,7 +11,7 @@ body {
 header .dc-power {
   height: 20px;
   width: 100%;
-  background-color: #006eff;
+  background-color: #0084ff;
 }
 header ul {
   display: flex;
@@ -50,7 +50,7 @@ main .comic-wrapper {
   margin: auto;
 }
 main .comic-wrapper .blue-bg {
-  background-color: #006eff;
+  background-color: #0084ff;
   color: white;
   border: none;
 }
@@ -91,4 +91,23 @@ main .comic-wrapper ul a .single-comic .thumb img {
   width: 160px;
   height: 180px;
   background-size: cover;
+}
+
+.blue-banner {
+  height: 60px;
+  background-color: #0084ff;
+}
+
+.comic-container {
+  width: 50%;
+  margin: auto;
+}
+.comic-container .comic-img-wrapper {
+  position: relative;
+}
+.comic-container .comic-img-wrapper img {
+  position: absolute;
+  top: -250px;
+  width: 20%;
+  border: 1px solid white;
 }

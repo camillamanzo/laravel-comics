@@ -1,0 +1,17 @@
+.blue-banner{
+    height: 60px;
+    background-color: $main-color;
+}
+.comic-container{
+    width: 50%;
+    margin: auto;
+    .comic-img-wrapper{
+        position: relative;
+        img{
+            position: absolute;
+            top: -250px;
+            width: 20%;
+            border: 1px solid white;
+        }
+    }
+}

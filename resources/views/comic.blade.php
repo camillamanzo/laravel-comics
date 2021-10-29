@@ -6,6 +6,9 @@
     <section class="jumbotron">
             
     </section>
+    
+    {{-- blue banner --}}
+    <div class="blue-banner"></div>
 
     {{-- @dump($comic) --}}
     <section class="comic-container">
@@ -29,7 +32,7 @@
             {{-- advert of the comic --}}
             <div class="advert">
                 <h3>Advertisement</h3>
-                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                <img src="/images/advert-pic.jpg" alt=""> alt="advert pic">
             </div>
 
             {{-- div on flex --}}
@@ -38,36 +41,36 @@
                 {{-- @dump($comic['artists']) --}}
 
                 {{-- talent section --}}
-                    <div class="talent">
-                        <hr>
-                        <div>
-                            <h3>Talent</h3>
-                            <span class="title">
-                                Art by:
-                            </span>
+                <div class="talent">
+                    <hr>
+                    <div>
+                        <h3>Talent</h3>
+                        <span class="title">
+                            Art by:
+                        </span>
 
-                            {{-- foreach to get to elements in artists array --}}
-                            @foreach ($comic['artists'] as $artist)
-                                <span class="info">
-                                    {{ $artist . ', ' }}
-                                </span>
-                            @endforeach
-                        </div>
-                        <hr>
-                        <div>
-                            <span class="title">
-                                Written by: 
+                        {{-- foreach to get to elements in artists array --}}
+                        @foreach ($comic['artists'] as $artist)
+                            <span class="info">
+                                {{ $artist . ', ' }}
                             </span>
-
-                            {{-- foreach to get to elements in writers array --}}
-                            @foreach ($comic['writers'] as $writer)
-                                <span class="info">
-                                    {{ $writer . ', ' }}
-                                </span>
-                            @endforeach
-                        </div>
-                        <hr>
+                        @endforeach
                     </div>
+                    <hr>
+                    <div>
+                        <span class="title">
+                            Written by: 
+                        </span>
+
+                        {{-- foreach to get to elements in writers array --}}
+                        @foreach ($comic['writers'] as $writer)
+                            <span class="info">
+                                {{ $writer . ', ' }}
+                            </span>
+                        @endforeach
+                    </div>
+                    <hr>
+                </div>
 
                 {{-- specs section --}}
                 <div class="specs">

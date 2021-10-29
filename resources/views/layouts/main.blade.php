@@ -9,12 +9,16 @@
     <title>Comics</title>
 </head>
 <body>
+
+    {{-- including header with connection to php file --}}
     @include('partials.header', ['header_links' => config('nav_header')])
     
+    {{-- connecting to content with yield connected to home.blade --}}
     <main>
         @yield('content')
     </main>
 
+    {{-- including footer (not implemented) --}}
     @include('partials.footer')
 
     @yield('script-adder')
