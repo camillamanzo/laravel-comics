@@ -3,6 +3,7 @@
 @section('title', 'comic')
 
 @section('content')
+
     <section class="jumbotron">
             
     </section>
@@ -23,88 +24,93 @@
 
             {{-- info on the comic --}}
             <div class="comic-info">
-                <h1>{{ $comic['title'] }}</h1>
-                <span>U.S. Price {{ $comic['price'] }}</span>
-                <span>Check Availability</span>
+                    <h1>{{ $comic['title'] }}</h1>
+
+                <div class="availability-wrapper">
+                    <span>U.S. Price {{ $comic['price'] }}</span>
+                    <span>available</span>
+                    <span>Check Availability</span>
+                </div>
+
                 <p>{{ $comic['description'] }}</p>
             </div>
 
             {{-- advert of the comic --}}
-            <div class="advert">
+            <div class="advert-wrapper">
                 <h3>Advertisement</h3>
-                <img src="/images/advert-pic.jpg" alt=""> alt="advert pic">
+                <figure>
+                    <img src="/images/advert-pic.jpg" alt="" alt="advert pic">
+                </figure>
             </div>
 
-            {{-- div on flex --}}
-            <div>
+        </div>
 
-                {{-- @dump($comic['artists']) --}}
+        {{-- div on flex --}}
+        <div class="info-wrapper">
 
-                {{-- talent section --}}
-                <div class="talent">
-                    <hr>
-                    <div>
-                        <h3>Talent</h3>
-                        <span class="title">
-                            Art by:
+            {{-- talent section --}}
+            <div class="talent">
+                <hr>
+                <div>
+                    <h3>Talent</h3>
+                    <span class="title">
+                        Art by:
+                    </span>
+
+                    {{-- foreach to get to elements in artists array --}}
+                    @foreach ($comic['artists'] as $artist)
+                        <span class="info">
+                            {{ $artist . ', ' }}
                         </span>
-
-                        {{-- foreach to get to elements in artists array --}}
-                        @foreach ($comic['artists'] as $artist)
-                            <span class="info">
-                                {{ $artist . ', ' }}
-                            </span>
-                        @endforeach
-                    </div>
-                    <hr>
-                    <div>
-                        <span class="title">
-                            Written by: 
-                        </span>
-
-                        {{-- foreach to get to elements in writers array --}}
-                        @foreach ($comic['writers'] as $writer)
-                            <span class="info">
-                                {{ $writer . ', ' }}
-                            </span>
-                        @endforeach
-                    </div>
-                    <hr>
+                    @endforeach
                 </div>
+                <hr>
+                <div>
+                    <span class="title">
+                        Written by: 
+                    </span>
 
-                {{-- specs section --}}
-                <div class="specs">
-                    <h3>Specs</h3>
-                    <hr>
-                    <div>
-                        <span class="title">
-                            Series:
-                        </span>
+                    {{-- foreach to get to elements in writers array --}}
+                    @foreach ($comic['writers'] as $writer)
                         <span class="info">
-                            {{ $comic['series'] }}
+                            {{ $writer . ', ' }}
                         </span>
-                    </div>
-                    <hr>
-                    <div>
-                        <span class="title">
-                            U.S. price:
-                        </span>
-                        <span class="info">
-                            {{ $comic['price'] }}
-                        </span>
-                    </div>
-                    <hr>
-                    <div>
-                        <span class="title">
-                            On Sale Date: 
-                        </span>
-                        <span class="info">
-                            {{ $comic['sale_date'] }}
-                        </span>
-                    </div>
-                    <hr>
+                    @endforeach
                 </div>
+                <hr>
+            </div>
 
+            {{-- specs section --}}
+            <div class="specs">
+                <h3>Specs</h3>
+                <hr>
+                <div>
+                    <span class="title">
+                        Series:
+                    </span>
+                    <span class="info">
+                        {{ $comic['series'] }}
+                    </span>
+                </div>
+                <hr>
+                <div>
+                    <span class="title">
+                        U.S. price:
+                    </span>
+                    <span class="info">
+                        {{ $comic['price'] }}
+                    </span>
+                </div>
+                <hr>
+                <div>
+                    <span class="title">
+                        On Sale Date: 
+                    </span>
+                    <span class="info">
+                        {{ $comic['sale_date'] }}
+                    </span>
+                </div>
+                <hr>
             </div>
         </div>
     </section>

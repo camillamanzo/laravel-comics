@@ -1,5 +1,4 @@
 main{
-    text-transform: uppercase;
 
     .jumbotron{
         background-image: url(/images/jumbotron.jpg);
@@ -28,6 +27,7 @@ main{
             font-size: 25px;
             position: absolute;
             top: -25px;
+            text-transform: uppercase;
         }
 
         .my_btn-container{
