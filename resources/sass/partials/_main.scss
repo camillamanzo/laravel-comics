@@ -15,6 +15,7 @@ main{
     .comic-wrapper{
         width: 80%;
         margin: auto;
+        text-transform: uppercase;
         .blue-bg{
             background-color: $main-color;
             color: white;
@@ -22,12 +23,12 @@ main{
         }
 
         .curr-series{
-            width: 235px;
-            padding: 10px 20px;
+            padding: 10px 30px;
             font-size: 25px;
             position: absolute;
             top: -25px;
             text-transform: uppercase;
+            font-weight: 700;
         }
 
         .my_btn-container{

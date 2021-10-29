@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap);* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -45,6 +45,7 @@ main .cards-container {
 main .comic-wrapper {
   width: 80%;
   margin: auto;
+  text-transform: uppercase;
 }
 main .comic-wrapper .blue-bg {
   background-color: #0084ff;
@@ -52,12 +53,12 @@ main .comic-wrapper .blue-bg {
   border: none;
 }
 main .comic-wrapper .curr-series {
-  width: 235px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 25px;
   position: absolute;
   top: -25px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 main .comic-wrapper .my_btn-container {
   padding-top: 30px;
@@ -99,6 +100,7 @@ main .comic-wrapper ul a .single-comic .thumb img {
 .comic-container {
   width: 50%;
   margin: auto;
+  padding-bottom: 50px;
 }
 .comic-container .comic-img-wrapper {
   position: relative;
@@ -118,6 +120,7 @@ main .comic-wrapper ul a .single-comic .thumb img {
   padding-right: 50px;
 }
 .comic-info-wrapper .comic-info .availability-wrapper {
+  margin: 25px 0 20px;
   padding: 10px 0;
   background-color: #00c900;
   color: white;
@@ -127,17 +130,44 @@ main .comic-wrapper ul a .single-comic .thumb img {
   padding: 10px;
 }
 .comic-info-wrapper .comic-info .availability-wrapper span:nth-child(2) {
-  padding-left: 100px;
+  padding-left: 130px;
   border-right: 1px solid black;
   text-transform: uppercase;
 }
 .comic-info-wrapper .advert-wrapper {
   text-align: right;
+  width: 30%;
 }
 .comic-info-wrapper .advert-wrapper img {
-  width: 150%;
+  width: 180px;
 }
 
-.info-wrapper {
+.info-container {
+  padding-top: 30px;
+  background-color: rgba(211, 211, 211, 0.486);
+  border-top: 1px solid #a3a3a3;
+}
+.info-container .info-wrapper {
   display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.info-container .info-wrapper .talent {
+  width: 50%;
+  padding-right: 30px;
+}
+.info-container .info-wrapper .specs {
+  width: 50%;
+}
+.info-container .info-wrapper .my_between {
+  display: flex;
+}
+.info-container .info-wrapper .my_between .info {
+  color: #0084ff;
+  font-size: 12px;
+}
+.info-container .info-wrapper .my_between .title {
+  font-size: 12px;
+  width: 400px;
 }

@@ -12,6 +12,8 @@
                 {{-- @dump($file) --}}
 
                 <li>
+
+                    {{-- route function that generated url --}}
                     <a href="{{ route('comic', ['id' => $loop->index] ) }}">
                         <div class="single-comic">
 

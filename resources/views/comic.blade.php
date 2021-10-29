@@ -11,7 +11,6 @@
     {{-- blue banner --}}
     <div class="blue-banner"></div>
 
-    {{-- @dump($comic) --}}
     <section class="comic-container">
 
         {{-- img on position absolute --}}
@@ -44,38 +43,47 @@
             </div>
 
         </div>
+    </section>
+
+    <section class="info-container">
 
         {{-- div on flex --}}
         <div class="info-wrapper">
 
             {{-- talent section --}}
             <div class="talent">
+                <h3>Talent</h3>
                 <hr>
-                <div>
-                    <h3>Talent</h3>
-                    <span class="title">
-                        Art by:
-                    </span>
+                <div class="my_between">
 
-                    {{-- foreach to get to elements in artists array --}}
-                    @foreach ($comic['artists'] as $artist)
-                        <span class="info">
-                            {{ $artist . ', ' }}
-                        </span>
-                    @endforeach
+                    <div class="title">
+                        Art by:
+                    </div>
+
+                    <div class="info">
+                        {{-- foreach to get to elements in artists array --}}
+                        @foreach ($comic['artists'] as $artist)
+                            <span>
+                                {{ $artist . ', ' }}
+                            </span>
+                        @endforeach
+                    </div>
                 </div>
                 <hr>
-                <div>
-                    <span class="title">
+                <div class="my_between">
+                    
+                    <div class="title">
                         Written by: 
-                    </span>
+                    </div>
 
-                    {{-- foreach to get to elements in writers array --}}
-                    @foreach ($comic['writers'] as $writer)
-                        <span class="info">
-                            {{ $writer . ', ' }}
-                        </span>
-                    @endforeach
+                    <div class="info">
+                        {{-- foreach to get to elements in writers array --}}
+                        @foreach ($comic['writers'] as $writer)
+                            <span>
+                                {{ $writer . ', ' }}
+                            </span>
+                        @endforeach
+                    </div>
                 </div>
                 <hr>
             </div>
@@ -84,33 +92,32 @@
             <div class="specs">
                 <h3>Specs</h3>
                 <hr>
-                <div>
-                    <span class="title">
+                <div class="my_between">
+                    <div class="title">
                         Series:
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info">
                         {{ $comic['series'] }}
-                    </span>
+                    </div>
                 </div>
                 <hr>
-                <div>
-                    <span class="title">
+                <div class="my_between">
+                    <div class="title">
                         U.S. price:
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info">
                         {{ $comic['price'] }}
-                    </span>
+                    </div>
                 </div>
                 <hr>
-                <div>
-                    <span class="title">
+                <div class="my_between">
+                    <div class="title">
                         On Sale Date: 
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info">
                         {{ $comic['sale_date'] }}
-                    </span>
+                    </div>
                 </div>
-                <hr>
             </div>
         </div>
     </section>
