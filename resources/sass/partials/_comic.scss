@@ -88,7 +88,7 @@
         }
         .my_between{
             display: flex;
-
+            justify-content: space-between;
             .info{
                 color: $main-color;
                 font-size: 12px;
@@ -96,7 +96,6 @@
             }
             .title{
                 font-size: 12px;
-                width: 400px;
                 padding: 5px 0;
             }
         }

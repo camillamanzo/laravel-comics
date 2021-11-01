@@ -178,6 +178,7 @@ main .comic-wrapper ul a .single-comic .thumb img {
 }
 .info-container .info-wrapper .my_between {
   display: flex;
+  justify-content: space-between;
 }
 .info-container .info-wrapper .my_between .info {
   color: #0084ff;
@@ -186,6 +187,5 @@ main .comic-wrapper ul a .single-comic .thumb img {
 }
 .info-container .info-wrapper .my_between .title {
   font-size: 12px;
-  width: 400px;
   padding: 5px 0;
 }
