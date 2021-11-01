@@ -6,13 +6,13 @@
 
         <nav class="link-nav">
             <ul>
-                <li><a href="/"><img src="/images/dc-logo.png" alt=""></a></li>
+                <li class="my_no-padding"><a href="/"><img src="/images/dc-logo.png" alt=""></a></li>
                 @foreach ($header_links as $link)
                     <li class="{{ request() -> routeIs ($link) ? 'active' : '' }}">
                         <a href="{{ ($link) }}">{{ $link }}</a>
                     </li>
                 @endforeach
-                <li><input type="search" placeholder="Search"></li>
+                <li class="my_no-padding"><input type="search" placeholder="Search"></li>
             </ul>
             <ul>
             </ul>

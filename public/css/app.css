@@ -26,12 +26,25 @@ header ul {
   font-size: 12px;
   list-style-type: none;
 }
+header ul .my_no-padding {
+  padding: 0;
+}
+header ul .my_no-padding:hover {
+  border-bottom: 2px solid transparent;
+}
 header ul li {
-  padding: 15px;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+  padding: 28px 10px;
+}
+header ul li:hover {
+  border-bottom: 2px solid #0084ff;
+}
+header ul li:hover a {
+  color: #0084ff;
 }
 header ul li img {
-  width: 50px;
-  margin-right: 40px;
+  height: 50px;
 }
 header ul li a {
   text-decoration: none;

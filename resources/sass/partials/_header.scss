@@ -4,10 +4,12 @@ header{
         width: 100%;
         background-color: $main-color;
     }
+
     .link-nav{
         width: 70%;
         margin: auto;
     }
+
     ul{
         display: flex;
         justify-content: space-between;
@@ -18,12 +20,29 @@ header{
         font-size: 12px;
         list-style-type: none;
         
-        li{
-            img{
-                width: 50px;
-                margin-right: 40px;
+        .my_no-padding{
+            padding: 0;
+
+            &:hover{
+                border-bottom: 2px solid transparent;
             }
-            padding: 15px;
+        }
+
+        li{
+            height: 100%;
+            border-bottom: 2px solid transparent;
+            padding: 28px 10px;
+
+            &:hover{
+                border-bottom: 2px solid $main-color;
+            }
+
+            &:hover a{
+                color: $main-color;
+            }
+            img{
+                height: 50px;
+            }
             a{
                 text-decoration: none;
                 color: grey;
