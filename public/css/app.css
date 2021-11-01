@@ -13,9 +13,13 @@ header .dc-power {
   width: 100%;
   background-color: #0084ff;
 }
+header .link-nav {
+  width: 70%;
+  margin: auto;
+}
 header ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -26,10 +30,19 @@ header ul li {
   padding: 15px;
 }
 header ul li img {
-  width: 60%;
+  width: 50px;
+  margin-right: 40px;
 }
 header ul li a {
   text-decoration: none;
+  color: grey;
+}
+header ul li input {
+  border: none;
+  border-bottom: 2px solid #0084ff;
+  text-align: right;
+  width: 100px;
+  margin-left: 40px;
 }
 
 main .jumbotron {

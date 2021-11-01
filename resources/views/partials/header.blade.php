@@ -4,7 +4,7 @@
 
         </div>
 
-        <nav>
+        <nav class="link-nav">
             <ul>
                 <li><a href="/"><img src="/images/dc-logo.png" alt=""></a></li>
                 @foreach ($header_links as $link)
